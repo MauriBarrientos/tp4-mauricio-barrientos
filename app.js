@@ -3,7 +3,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
 require('dotenv').config();
-const port = process.env.PORT|| 5000;
+const port = process.env.PORT||5000;
 const app = express();
 
 //middlewares
@@ -13,6 +13,7 @@ app.use(morgan('dev'));
 app.use(helmet());
 app.use(cors());
 
+//rutas
 app.use('/',require('./src/routes/routes'));
 
 app.listen(port||5000,()=>{
