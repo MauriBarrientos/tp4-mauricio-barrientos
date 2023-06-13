@@ -1,13 +1,11 @@
-let ctrl = {
-    
-}
+let ctrl = {};
 ctrl.post = (req, res)=>{
     res.send('post')
 }
 ctrl.put = (req, res)=>{
    res.send('put')
 }
-ctrl.delete = (req, res)=>{
+ctrl.deletetp = (req, res)=>{
    res.send('delete')
 }
 ctrl.get = (req, res)=>{
